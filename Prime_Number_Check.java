@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        int flag=1;
+        if(N<=1)
+        {
+            flag=0;
+        }
+        for(int i=2;i<N/2;i++)
+        {
+            if(N%i==0)
+            {
+                flag=0;
+            }
+        }
+        if(flag==1)
+        {
+            System.out.println("yes");
+        }
+        else{
+            System.out.println("no");
+        }
+        
+    }
+}
